@@ -1,0 +1,200 @@
+[
+  {
+    "title": "Cherry Farro Salad with Sweet Vinaigrette",
+    "cook_time": 15,
+    "prep_time": 15,
+    "ingredients": [
+      "¼ cup extra-virgin olive oil",
+      "¼ cup pure maple syrup",
+      "¼ cup apple cider vinegar",
+      "2 teaspoons white sugar",
+      "½ teaspoon salt",
+      "¼ cup chopped walnuts",
+      "2 ½ cups chicken broth or vegetable broth",
+      "1 cup farro",
+      "½ teaspoon dried oregano",
+      "½ teaspoon dried basil",
+      "1 cup chopped tart green apple",
+      "¾ cup dried cherries",
+      "2 tablespoons chopped flat-leaf parsley"
+    ],
+    "ratings": 4.56,
+    "cuisine": "",
+    "category": "Vinaigrette Dressing",
+    "author": "Traci-in-Cali",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1251129.jpg"
+  },
+  {
+    "title": "Buffalo Chicken Salad",
+    "cook_time": 0,
+    "prep_time": 10,
+    "ingredients": [
+      "2 cups cubed, cooked chicken",
+      "½ cup ranch dressing",
+      "¼ cup hot buffalo wing sauce (such as Frank's® REDHOT Buffalo Wing Sauce), or to taste",
+      "3 stalks celery, diced",
+      "2 green onions, chopped",
+      "salt and freshly ground black pepper to taste"
+    ],
+    "ratings": 4.64,
+    "cuisine": "",
+    "category": "Salad Recipes",
+    "author": "Nikki",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2536399.jpg"
+  },
+  {
+    "title": "Vegetable Soup - Irish Style",
+    "cook_time": 20,
+    "prep_time": 10,
+    "ingredients": [
+      "3 carrots, chopped",
+      "3 large potatoes - peeled and cubed",
+      "1 parsnip, peeled and diced",
+      "1 turnip, peeled and diced",
+      "1 leek, sliced",
+      "½ onion, chopped",
+      "¼ cup dry potato flakes",
+      "salt and pepper to taste",
+      "1 cup water, or as needed"
+    ],
+    "ratings": 3.89,
+    "cuisine": "",
+    "category": "Vegetable Soup",
+    "author": "COLMRYAN",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1099492.jpg"
+  },
+  {
+    "title": "Tomato Avocado Sandwich",
+    "cook_time": 0,
+    "prep_time": 10,
+    "ingredients": [
+      "½ avocado - peeled, pitted, and mashed",
+      "1 teaspoon garlic salt",
+      "1 slice ciabatta bread",
+      "3 slices tomato",
+      "1 pinch ground black pepper to taste"
+    ],
+    "ratings": 4,
+    "cuisine": "",
+    "category": "Sandwiches",
+    "author": "ronnietong",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3637962.jpg"
+  },
+  {
+    "title": "Chicken, Avocado and Mango Salad",
+    "cook_time": 0,
+    "prep_time": 30,
+    "ingredients": [
+      "2 tablespoons brown sugar",
+      "¼ cup water",
+      "⅓ cup lime juice",
+      "½ cup chili garlic sauce",
+      "4 cups shredded, cooked chicken",
+      "2 medium mangos - peeled, seeded and diced",
+      "2 avocados - peeled, pitted and diced",
+      "1 (10 ounce) package spring lettuce mix"
+    ],
+    "ratings": 4.21,
+    "cuisine": "",
+    "category": "Salad Recipes",
+    "author": "GREENLIME",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1119464.jpg"
+  },
+  {
+    "title": "Swedish Meat Pies",
+    "cook_time": 0,
+    "prep_time": 40,
+    "ingredients": [
+      "1 tablespoon butter",
+      "1 pound ground beef",
+      "¼ cup chopped onion",
+      "2 tablespoons chopped fresh parsley",
+      "¼ teaspoon ground allspice",
+      "¼ teaspoon dried dill weed",
+      "1 pinch ground nutmeg",
+      "2 large red potatoes, grated",
+      "2 cups shredded Cheddar cheese",
+      "2 cups all-purpose flour",
+      "1 teaspoon salt",
+      "¾ cup shortening",
+      "6 tablespoons sour cream"
+    ],
+    "ratings": 4.06,
+    "cuisine": "",
+    "category": "Scandinavian Recipes",
+    "author": "Emily Dunaway",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1031734.jpg"
+  },
+  {
+    "title": "Japanese Cucumber Salad (Sunomono)",
+    "cook_time": 0,
+    "prep_time": 15,
+    "ingredients": [
+      "5 cucumbers",
+      "2 teaspoons salt",
+      "½ cup lemon juice",
+      "½ cup white sugar",
+      "1 tablespoon white wine vinegar",
+      "¼ cup toasted sesame seeds, or to taste"
+    ],
+    "ratings": 4.63,
+    "cuisine": "",
+    "category": "Cucumber Salad",
+    "author": "Celsia",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2298368.jpg"
+  },
+  {
+    "title": "Sloppy Does",
+    "cook_time": 20,
+    "prep_time": 10,
+    "ingredients": [
+      "1 teaspoon olive oil",
+      "1 pound ground venison",
+      "1 jalapeno pepper, seeded and diced",
+      "½ cup ketchup",
+      "1 clove garlic, diced",
+      "2 teaspoons molasses",
+      "1 teaspoon prepared yellow mustard"
+    ],
+    "ratings": 5,
+    "cuisine": "",
+    "category": "Venison Recipes",
+    "author": "Zacktheperson",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1578799.jpg"
+  },
+  {
+    "title": "PBM Sandwich",
+    "cook_time": 1,
+    "prep_time": 4,
+    "ingredients": [
+      "2 tablespoons peanut butter",
+      "2 slices bread",
+      "2 ½ tablespoons marshmallow cream (such as Marshmallow Fluff®)"
+    ],
+    "ratings": 4.76,
+    "cuisine": "",
+    "category": "Sandwiches",
+    "author": "Sarah K",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F9444554.jpg"
+  },
+  {
+    "title": "Buffalo Chicken and Ranch Wraps",
+    "cook_time": 45,
+    "prep_time": 20,
+    "ingredients": [
+      "1 pound thin-sliced bacon",
+      "2 tablespoons bacon drippings",
+      "3 pounds skinless, boneless chicken breast halves, cut into bite size pieces",
+      "¼ cup Buffalo wing sauce",
+      "2 tablespoons butter, melted",
+      "12 (10 inch) flour tortillas",
+      "1 cup diced fresh tomato",
+      "¾ cup ranch dressing, divided"
+    ],
+    "ratings": 4.6,
+    "cuisine": "",
+    "category": "Mexican Recipes",
+    "author": "figgy",
+    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F614699.jpg"
+  }
+]

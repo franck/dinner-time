@@ -1,24 +1,24 @@
 require 'rails_helper'
 
-describe Recipes::Importers::CreateFrenchRecipe do
+describe Recipes::Importers::CreateEnglishRecipe do
 
   context "when json_recipe is valid" do
     it "creates a recipe" do
       recipe_data = {
-        name: 'Poulet basquaise',
-        ingredients: ['1 poulet', '2 poivrons', '2 tomates'],
+        title: 'Buffalo Chicken',
+        ingredients: ['1 pound thin-sliced bacon', '3 pounds of Chicken breast'],
       }
 
       recipe = described_class.call(recipe_data)
 
-      expect(recipe.name).to eq('Poulet basquaise')
-      expect(recipe.ingredients).to eq("1 poulet\n2 poivrons\n2 tomates")
-      expect(recipe.locale).to eq('fr')
+      expect(recipe.name).to eq('Buffalo Chicken')
+      expect(recipe.ingredients).to eq("1 pound thin-sliced bacon\n3 pounds of Chicken breast")
+      expect(recipe.locale).to eq('en')
     end
   end
 
   context "when something is missing" do
-    let(:invalid_data) { { ingredients: ['1 poulet', '2 poivrons', '2 tomates'] } }
+    let(:invalid_data) { { ingredients: ['1 pound thin-sliced bacon', '3 pounds of Chicken breast'], } }
     it 'returns invalid recipe' do
       recipe = described_class.call(invalid_data)
 

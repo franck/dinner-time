@@ -1,6 +1,7 @@
 module Recipes
   module Importers
-    class CreateFrenchRecipe
+    class CreateEnglishRecipe
+
       def initialize(recipe_data)
         @recipe_data = recipe_data.with_indifferent_access
       end
@@ -19,9 +20,9 @@ module Recipes
 
         def recipe_params
           {
-            name: recipe_data['name'],
+            name: recipe_data['title'],
             ingredients: recipe_data['ingredients'].join("\n"),
-            locale: 'fr',
+            locale: 'en',
           }
         end
     end
