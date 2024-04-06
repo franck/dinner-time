@@ -5,4 +5,13 @@ describe Recipes::Importers::ImportRecipes do
     path = Rails.root.join('spec', 'fixtures', 'recipes-fr.json')
     expect { described_class.new(path: path, locale: 'fr').call }.to change { Recipe.count }.by(10)
   end
+
+  it 'raise an error if file is missing' do
+    expect { described_class.new(path: 'missing.json', locale: 'fr').call }.to raise_error(ArgumentError, 'File not found')
+  end
+
+  it 'raise an error if locale is invalid' do
+    path = Rails.root.join('spec', 'fixtures', 'recipes-fr.json')
+    expect { described_class.new(path: path, locale: 'es').call }.to raise_error(ArgumentError, 'Invalid locale')
+  end
 end
