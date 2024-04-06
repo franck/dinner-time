@@ -1,0 +1,28 @@
+
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="bg-white py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <h2 class="inline sm:block"><%= t('recipes.index.title') %></h2>
+    </div>
+    <form class="mt-10 max-w-md">
+      <div class="flex gap-x-4">
+        Form
+      </div>
+    </form>
+  </div>
+</div>
+
