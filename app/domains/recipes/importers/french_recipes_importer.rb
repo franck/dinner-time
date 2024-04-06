@@ -17,24 +17,12 @@ module Recipes
         attr_reader :path_to_json_file
 
         def create_recipes_from_json_file
-          json_recipes.each do |json_recipe|
-            create_recipe(json_recipe)
+          recipes_data.each do |recipe_data|
+            Recipes::Importers::CreateFrenchRecipe.call(recipe_data)
           end
         end
 
-        def create_recipe(json_recipe)
-          Recipe.create!(recipe_params(json_recipe))
-        end
-
-        def recipe_params(json_recipe)
-          {
-            name: json_recipe['name'],
-            ingredients: json_recipe['ingredients'].join("\n"),
-            locale: 'fr',
-          }
-        end
-
-        def json_recipes
+        def recipes_data
           JSON.parse(json_file)
         end
 
