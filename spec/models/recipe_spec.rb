@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Recipe, type: :model do
+describe Recipe do
 
   describe "validations" do
     it "is valid with a name, ingredients and locale" do
@@ -10,6 +10,12 @@ RSpec.describe Recipe, type: :model do
 
     it "is invalid without a name" do
       recipe = Recipe.new(valid_params.except(:name))
+      expect(recipe).to be_invalid
+    end
+
+    it 'is invalid if name is not unique' do
+      Recipe.create(valid_params)
+      recipe = Recipe.new(valid_params)
       expect(recipe).to be_invalid
     end
 
