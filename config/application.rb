@@ -42,7 +42,7 @@ module DinnerTime
 
     I18n.enforce_available_locales = true
     config.i18n.available_locales = %w[fr en]
-    config.i18n.default_locale = :en
+    config.i18n.default_locale = :fr
     config.i18n.fallbacks = false
 
     # Don't generate system test files.

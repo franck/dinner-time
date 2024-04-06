@@ -1,0 +1,307 @@
+[
+  {
+    "author": "henry_17515720",
+    "rate": "4.6",
+    "difficulty": "Niveau moyen",
+    "budget": "bon marché",
+    "prep_time": "1 h",
+    "total_time": "1h15",
+    "people_quantity": "4",
+    "author_tip": "",
+    "ingredients": [
+      "4 blancs de poulet",
+      "1 poivron rouge",
+      "1 poivron vert",
+      "300g de riz type basmati",
+      "2 citrons",
+      "1cuillère à soupe de gingembre frais",
+      "3gousses d'ail",
+      "3cuillères à soupe de sauce soja",
+      "1/2botte de coriandre"
+    ],
+    "name": "Wok de poulet poivron à l'asiatique",
+    "tags": [
+      "Wok",
+      "Plat principal"
+    ],
+    "image": "https://assets.afcdn.com/recipe/20161004/23108_w420h344c1cx1500cy1000.jpg",
+    "nb_comments": "12",
+    "cook_time": "15 min"
+  },
+  {
+    "author": "anna_16939396",
+    "rate": "4.5",
+    "difficulty": "facile",
+    "budget": "bon marché",
+    "prep_time": "30 min",
+    "total_time": "1 h",
+    "people_quantity": "6",
+    "author_tip": "",
+    "ingredients": [
+      "3 courgettes",
+      "3 navets",
+      "3 carottes",
+      "3 poivrons (1 jaune et 2 rouges)",
+      "2 oignons",
+      "6 blancs de poulet",
+      "1kg de nouilles chinoises",
+      "Sauce soja sucrée",
+      "Huile d'olive",
+      "Sel",
+      "Poivre"
+    ],
+    "name": "Wok de poulet aux légumes",
+    "tags": [
+      "Plat principal"
+    ],
+    "image": "https://assets.afcdn.com/recipe/20130322/64870_w420h344c1cx256cy192.jpg",
+    "nb_comments": "6",
+    "cook_time": "30 min"
+  },
+  {
+    "author": "anna_14345586",
+    "rate": "4.4",
+    "difficulty": "très facile",
+    "budget": "Coût moyen",
+    "prep_time": "2 min",
+    "total_time": "12 min",
+    "people_quantity": "1",
+    "author_tip": "",
+    "ingredients": [
+      "150g de saumon (ou darne)",
+      "250g d'épinards frais",
+      "1petit verre de riz (blanc, rouge et sauvage)",
+      "Sauce soja",
+      "Poivre du moulin",
+      "2cuillères à café d'huile d'olive"
+    ],
+    "name": "Wok de saumon aux épinards frais",
+    "tags": [
+      "Rapide",
+      "Plat principal"
+    ],
+    "image": "https://assets.afcdn.com/recipe/20160223/26931_w420h344c1cx250cy375.jpg",
+    "nb_comments": "30",
+    "cook_time": "10 min"
+  },
+  {
+    "author": "julia_16808447",
+    "rate": "4.8",
+    "difficulty": "très facile",
+    "budget": "Coût moyen",
+    "prep_time": "30 min",
+    "total_time": "1h30",
+    "people_quantity": "2",
+    "author_tip": "",
+    "ingredients": [
+      "1 oignon",
+      "3gousses d'ail",
+      "Poivre",
+      "Sel",
+      "Beurre ou margarine et huile d'olive",
+      "500g de poulet",
+      "4 poivrons (vert, rouge, jaune, orange)",
+      "1 brocoli",
+      "4 tomates de taille moyenne",
+      "6 champignons de taille moyenne",
+      "25cl de crème fraîche allégée",
+      "1boîte de concentré de tomates (70 g)"
+    ],
+    "name": "Wok tomaté aux dés de poulet",
+    "tags": [
+      "Blanc de poulet",
+      "Sans gluten",
+      "Plat principal",
+      "Viande",
+      "Viande en sauce",
+      "Wok"
+    ],
+    "image": "https://assets.afcdn.com/recipe/20121124/22522_w420h344c1cx192cy256.jpg",
+    "nb_comments": "16",
+    "cook_time": "1 h"
+  },
+  {
+    "author": "anna_15240032",
+    "rate": "",
+    "difficulty": "facile",
+    "budget": "bon marché",
+    "prep_time": "15 min",
+    "total_time": "30 min",
+    "people_quantity": "4",
+    "author_tip": "",
+    "ingredients": [
+      "8 galettes (bretonnes) à burritos",
+      "Fromage ail et fines herbes",
+      "8tranches de jambon cru",
+      "6 tomates",
+      "2bûches de fromage de chèvre ou du gruyère",
+      "Fromage râpé"
+    ],
+    "name": "Wraps jambon fromage à la Ika",
+    "tags": [
+      "Plat principal"
+    ],
+    "image": "",
+    "nb_comments": "0",
+    "cook_time": "15 min"
+  },
+  {
+    "author": "Marmiton_Recettes",
+    "rate": "3.8",
+    "difficulty": "très facile",
+    "budget": "bon marché",
+    "prep_time": "20 min",
+    "total_time": "45 min",
+    "people_quantity": "4",
+    "author_tip": "",
+    "ingredients": [
+      "4 tortillas de blé",
+      "175g de feta",
+      "1 aubergine",
+      "2 poivrons (de couleur différentes)",
+      "2 tomates",
+      "1pincée de sel",
+      "feuille de basilic",
+      "Huile d'olive"
+    ],
+    "name": "Wrap aux légumes d'été et feta",
+    "tags": [
+      "Végétarien",
+      "Plat principal"
+    ],
+    "image": "https://assets.afcdn.com/recipe/20160428/11375_w420h344c1cx1982cy2972.jpg",
+    "nb_comments": "5",
+    "cook_time": "25 min"
+  },
+  {
+    "author": "violettencolloc",
+    "rate": "",
+    "difficulty": "très facile",
+    "budget": "Coût moyen",
+    "prep_time": "5 min",
+    "total_time": "5 min",
+    "people_quantity": "1",
+    "author_tip": "",
+    "ingredients": [
+      "1/2 avocat",
+      "1/4 mangue mûre",
+      "1tranche de saumon fumé",
+      "1cuillère à soupe de fromage blanc",
+      "1pointe de wasabi",
+      "goutte de sauce soja peu salée",
+      "1poignée de mâche ou roquette",
+      "1 tortilla de blé"
+    ],
+    "name": "Wrap gourmand à la mangue, à l'avocat et au saumon",
+    "tags": [
+      "Rapide",
+      "Plat principal"
+    ],
+    "image": "",
+    "nb_comments": "0",
+    "cook_time": "0"
+  },
+  {
+    "author": "Herta",
+    "rate": "",
+    "difficulty": "très facile",
+    "budget": "bon marché",
+    "prep_time": "25 min",
+    "total_time": "40 min",
+    "people_quantity": "2",
+    "author_tip": "",
+    "ingredients": [
+      "4 tortillas",
+      "1paquet de Bouchées Grillées Soja & Blé LE BON VEGETAL HERTA®",
+      "1/2 poivron rouge",
+      "1/2 poivron jaune",
+      "1/2 oignon rouge",
+      "1pincée de piment",
+      "200ml de coulis de tomate",
+      "2branches de coriandre fraîche",
+      "1gousse d'ail",
+      "2cuillères à soupe de noix de cajou",
+      "1cuillère à café de cumin",
+      "1cuillère à soupe d'huile d'olive",
+      "1pincée de sel et poivre"
+    ],
+    "name": "Wraps végétariens",
+    "tags": [
+      "Plat végétarien vegetarian",
+      "Plat végétarien",
+      "Plat principal"
+    ],
+    "image": "https://assets.afcdn.com/recipe/20190802/95924_w420h344c1cx2448cy1632cxt0cyt0cxb4896cyb3264.jpg",
+    "nb_comments": "0",
+    "cook_time": "15 min"
+  },
+  {
+    "author": "yann1980",
+    "rate": "4",
+    "difficulty": "facile",
+    "budget": "Coût moyen",
+    "prep_time": "15 min",
+    "total_time": "1h30",
+    "people_quantity": "6",
+    "author_tip": "",
+    "ingredients": [
+      "1 rôti de porc",
+      "2 oignons émincés",
+      "4 ail écrasés",
+      "1 lait",
+      "2 gingembre en poudre",
+      "3cuillères à soupe de sauce soja",
+      "3cuillères à soupe de miel",
+      "3cuillères à soupe de wasabi",
+      "Moutarde",
+      "1botte de coriandre hachée",
+      "1cuillère à soupe de cumin",
+      "Sel /poivre"
+    ],
+    "name": "Yakibuta : Roti de porc à la japonaise",
+    "tags": [
+      "Plats japonais",
+      "Plat unique",
+      "Plat principal"
+    ],
+    "image": "",
+    "nb_comments": "1",
+    "cook_time": "1h15"
+  },
+  {
+    "author": "bruno_14326321",
+    "rate": "5",
+    "difficulty": "Niveau moyen",
+    "budget": "bon marché",
+    "prep_time": "30 min",
+    "total_time": "1h40",
+    "people_quantity": "4",
+    "author_tip": "",
+    "ingredients": [
+      "2kg de cuisse de poulet (désossées)",
+      "6 oignons",
+      "2 pommes de terre par personnes (découper en morceaux de 2 à 3 cm)",
+      "5 citrons jaunes",
+      "1kg de patate douce (découpée en morceau de 4 à 5 cm)",
+      "2 cubes de bouillon de volaille",
+      "75g de moutarde forte",
+      "70g de double concentré de tomates",
+      "1 piment antillais (ciselé)",
+      "1gousse d'ail (écrasée)",
+      "6cuillères à soupe d'huile d’arachide",
+      "Poivre 5 baies",
+      "1/2cuillère à café de muscade moulue",
+      "2cuillères à café de citronnelle séchée ou fraîche",
+      "2cuillères à soupe d'oignon frits"
+    ],
+    "name": "Poulet yassa à ma facon (Côte d'Ivoire)",
+    "tags": [
+      "Plats africains",
+      "Plat unique",
+      "Plat principal"
+    ],
+    "image": "",
+    "nb_comments": "1",
+    "cook_time": "1h10"
+  }
+]
