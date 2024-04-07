@@ -2,3 +2,6 @@ fr:
   recipes:
     index:
       title: "C'est l'heure du repas!"
+      form:
+        query: "Rechecher une recette"
+        submit: "Rechercher"

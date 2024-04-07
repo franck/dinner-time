@@ -2,3 +2,6 @@ en:
   recipes:
     index:
       title: "Dinner Time!"
+      form:
+        query: "Search for a recipe"
+        submit: "Search"
