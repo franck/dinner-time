@@ -1,7 +1,6 @@
 module Recipes
   module Importers
     class CreateEnglishRecipe
-
       def initialize(recipe_data)
         @recipe_data = recipe_data.with_indifferent_access
       end
@@ -16,15 +15,15 @@ module Recipes
 
       private
 
-        attr_reader :recipe_data
+      attr_reader :recipe_data
 
-        def recipe_params
-          {
-            name: recipe_data['title'],
-            ingredients: recipe_data['ingredients'].join("\n"),
-            locale: 'en',
-          }
-        end
+      def recipe_params
+        {
+          name: recipe_data['title'],
+          ingredients: recipe_data['ingredients'].join("\n"),
+          locale: 'en'
+        }
+      end
     end
   end
 end

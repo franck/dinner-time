@@ -15,15 +15,15 @@ module Recipes
 
       private
 
-        attr_reader :recipe_data
+      attr_reader :recipe_data
 
-        def recipe_params
-          {
-            name: recipe_data['name'],
-            ingredients: recipe_data['ingredients'].join("\n"),
-            locale: 'fr',
-          }
-        end
+      def recipe_params
+        {
+          name: recipe_data['name'],
+          ingredients: recipe_data['ingredients'].join("\n"),
+          locale: 'fr'
+        }
+      end
     end
   end
 end

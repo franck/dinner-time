@@ -1,11 +1,13 @@
 require 'rails_helper'
 
-describe "Search recipes" do
-  let!(:recipe) { Recipe.create!(name: 'Salade de tomates', ingredients: '2 tomates', locale: 'fr') }
-  let!(:recipe2) { Recipe.create!(name: 'Salade de carottes', ingredients: '2 carottes', locale: 'fr') }
-  let!(:recipe3) { Recipe.create!(name: 'Carots salad', ingredients: '2 carots', locale: 'en') }
+describe 'Search recipes' do
+  before do
+    Recipe.create!(name: 'Salade de tomates', ingredients: '2 tomates', locale: 'fr')
+    Recipe.create!(name: 'Salade de carottes', ingredients: '2 carottes', locale: 'fr')
+    Recipe.create!(name: 'Carots salad', ingredients: '2 carots', locale: 'en')
+  end
 
-  describe "when I submit the search form without any query" do
+  describe 'when I submit the search form without any query' do
     it 'does not show any recipe' do
       visit '/'
 
@@ -15,7 +17,7 @@ describe "Search recipes" do
     end
   end
 
-  describe "when I submit the search form with the name of an ingredient" do
+  describe 'when I submit the search form with the name of an ingredient' do
     it 'shows recipes containing this ingredient' do
       visit '/'
       fill_in :search_form_query, with: 'carot'

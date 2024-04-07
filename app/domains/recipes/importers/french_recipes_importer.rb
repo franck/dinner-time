@@ -1,7 +1,6 @@
 module Recipes
   module Importers
     class FrenchRecipesImporter
-
       def initialize(path_to_json_file)
         @path_to_json_file = path_to_json_file
       end
@@ -14,22 +13,21 @@ module Recipes
 
       private
 
-        attr_reader :path_to_json_file
+      attr_reader :path_to_json_file
 
-        def create_recipes_from_json_file
-          recipes_data.each do |recipe_data|
-            Recipes::Importers::CreateFrenchRecipe.call(recipe_data)
-          end
+      def create_recipes_from_json_file
+        recipes_data.each do |recipe_data|
+          Recipes::Importers::CreateFrenchRecipe.call(recipe_data)
         end
+      end
 
-        def recipes_data
-          JSON.parse(json_file)
-        end
+      def recipes_data
+        JSON.parse(json_file)
+      end
 
-        def json_file
-          File.read(path_to_json_file)
-        end
-
+      def json_file
+        File.read(path_to_json_file)
+      end
     end
   end
 end

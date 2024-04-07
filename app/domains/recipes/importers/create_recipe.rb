@@ -12,19 +12,19 @@ module Recipes
 
       private
 
-        attr_reader :recipe_data, :locale
+      attr_reader :recipe_data, :locale
 
-        def recipe_params
-          {
-            name: recipe_data[name_key],
-            ingredients: recipe_data['ingredients'].join("\n"),
-            locale: locale,
-          }
-        end
+      def recipe_params
+        {
+          name: recipe_data[name_key],
+          ingredients: recipe_data['ingredients'].join("\n"),
+          locale:
+        }
+      end
 
-        def name_key
-          locale == 'en' ? 'title' : 'name'
-        end
+      def name_key
+        locale == 'en' ? 'title' : 'name'
+      end
     end
   end
 end

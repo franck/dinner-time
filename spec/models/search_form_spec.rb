@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe SearchForm do
-
   describe '#results' do
     context 'with some recipes' do
       let!(:recipe1) { Recipe.create!(name: 'Salade de tomates', ingredients: '2 tomates', locale: 'fr') }
@@ -42,6 +41,7 @@ describe SearchForm do
     context 'with recipes in different locales' do
       let!(:recipe1) { Recipe.create!(name: 'Salade de carottes', ingredients: '2 carottes, des epices', locale: 'fr') }
       let!(:recipe2) { Recipe.create!(name: 'Carot salads', ingredients: '2 carots, des epices', locale: 'en') }
+
       it 'returns recipes in the given locale' do
         search_form = described_class.new(query: 'carot', locale: 'fr')
         results = search_form.results

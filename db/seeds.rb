@@ -1,6 +1,4 @@
-LOCALES = %w[en fr]
-
-LOCALES.each do |locale|
+AppConfig::VALID_LOCALES.each do |locale|
   path = Rails.root.join('data', "recipes-#{locale}.json")
-  Recipes::Importers::ImportRecipes.new(path, locale: locale).call
+  Recipes::Importers::ImportRecipes.new(path, locale:).call
 end

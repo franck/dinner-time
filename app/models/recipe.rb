@@ -6,8 +6,7 @@ class Recipe < ApplicationRecord
   validates :locale, presence: true
 
   pg_search_scope :search_by_ingredients,
-    against: :ingredients,
-    ignoring: :accents,
-    using: { tsearch: { dictionary: 'simple', prefix: true } }
-
+                  against: :ingredients,
+                  ignoring: :accents,
+                  using: { tsearch: { dictionary: 'simple', prefix: true } }
 end

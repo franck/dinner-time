@@ -6,9 +6,8 @@ class SearchForm
   attribute :locale, :string
 
   def results
-    return Recipe.none if query.blank? or locale.blank?
+    return Recipe.none if query.blank? || locale.blank?
 
-    Recipe.where(locale: locale).search_by_ingredients(query)
+    Recipe.where(locale:).search_by_ingredients(query)
   end
-
 end

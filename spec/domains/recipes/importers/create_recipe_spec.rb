@@ -2,10 +2,10 @@ require 'rails_helper'
 
 describe Recipes::Importers::CreateRecipe do
   context 'when locale is FR' do
-    let(:recipe_data) { { name: 'Poulet basquaise', ingredients: ['1 poulet', '2 poivrons', '2 tomates'], } }
+    let(:recipe_data) { { name: 'Poulet basquaise', ingredients: ['1 poulet', '2 poivrons', '2 tomates'] } }
 
-    context "when json_recipe is valid" do
-      it "creates a recipe" do
+    context 'when json_recipe is valid' do
+      it 'creates a recipe' do
         recipe = described_class.new(recipe_data, locale: 'fr').call
 
         expect(recipe.name).to eq('Poulet basquaise')
@@ -14,15 +14,17 @@ describe Recipes::Importers::CreateRecipe do
       end
     end
 
-    context "when something is missing" do
+    context 'when something is missing' do
       let(:invalid_data) { { ingredients: ['1 poulet', '2 poivrons', '2 tomates'] } }
+
       it 'returns invalid recipe' do
         recipe = described_class.new(invalid_data, locale: 'fr').call
 
         expect(recipe).to be_invalid
       end
+
       it 'does not create a recipe' do
-        expect{ described_class.new(invalid_data, locale: 'fr').call }.not_to change { Recipe.count }
+        expect { described_class.new(invalid_data, locale: 'fr').call }.not_to(change(Recipe, :count))
       end
     end
 
@@ -30,17 +32,17 @@ describe Recipes::Importers::CreateRecipe do
       it 'does not create a recipe' do
         described_class.new(recipe_data, locale: 'fr').call
 
-        expect{ described_class.new(recipe_data, locale: 'fr').call }.not_to change { Recipe.count }
+        expect { described_class.new(recipe_data, locale: 'fr').call }.not_to(change(Recipe, :count))
       end
     end
   end
 
   context 'when locale is EN' do
-    context "when data is valid" do
-      it "creates a recipe" do
+    context 'when data is valid' do
+      it 'creates a recipe' do
         recipe_data = {
           title: 'Buffalo Chicken',
-          ingredients: ['1 pound thin-sliced bacon', '3 pounds of Chicken breast'],
+          ingredients: ['1 pound thin-sliced bacon', '3 pounds of Chicken breast']
         }
 
         recipe = described_class.new(recipe_data, locale: 'en').call
@@ -50,6 +52,5 @@ describe Recipes::Importers::CreateRecipe do
         expect(recipe.locale).to eq('en')
       end
     end
-    end
-
   end
+end

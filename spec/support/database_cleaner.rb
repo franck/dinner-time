@@ -25,7 +25,7 @@ RSpec.configure do |config|
 
   private
 
-    def cleaner
-      DatabaseCleaner
-    end
+  def cleaner
+    DatabaseCleaner
+  end
 end
