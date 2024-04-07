@@ -8,7 +8,7 @@ class SearchForm
   def results
     return Recipe.none if query.blank? or locale.blank?
 
-    Recipe.where(locale: locale).where('ingredients ILIKE ?', "%#{query}%")
+    Recipe.where(locale: locale).search_by_ingredients(query)
   end
 
 end

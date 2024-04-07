@@ -1,24 +1,13 @@
-# README
+# Dinner time
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Exercise** : https://gist.github.com/quentindemetz/2096248a1e8d362e669350700e1e6add
 
-Things you may want to cover:
+## Deployment
 
-* Ruby version
+Add unnaccent Pg extension:
 
-* System dependencies
+```
+CREATE EXTENSION unaccent;
+```
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

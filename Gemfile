@@ -20,6 +20,9 @@ gem "bootsnap", require: false
 # Pagination
 gem 'kaminari'
 
+# Text search
+gem 'pg_search'
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem 'rspec-rails'
