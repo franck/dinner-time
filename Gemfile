@@ -42,3 +42,5 @@ group :development do
   gem 'rack-mini-profiler'
   gem 'web-console'
 end
+
+gem 'http_accept_language', '~> 2.1'

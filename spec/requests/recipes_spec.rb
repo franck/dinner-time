@@ -9,7 +9,7 @@ describe 'Recipes', type: :request do
   context 'when json requests' do
     describe 'GET / with a query' do
       before do
-        get '/', headers: { 'ACCEPT' => 'application/json' }, params: { search_form: { query: 'carot' } }
+        get '/fr', headers: { 'ACCEPT' => 'application/json' }, params: { search_form: { query: 'carot' } }
       end
 
       it 'responds with a 200 status' do

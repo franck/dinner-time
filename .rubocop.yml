@@ -4,6 +4,9 @@ require:
   - rubocop-rspec
   - rubocop-capybara
 
+AllCops:
+  SuggestExtensions: false
+
 
 RSpec/MultipleExpectations:
   Max: 3
