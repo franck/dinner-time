@@ -45,3 +45,5 @@ group :development do
 end
 
 gem 'http_accept_language', '~> 2.1'
+
+gem "dockerfile-rails", ">= 1.6", :group => :development

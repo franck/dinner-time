@@ -109,6 +109,8 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     diff-lcs (1.5.1)
+    dockerfile-rails (1.6.8)
+      rails (>= 3.0.0)
     drb (2.2.1)
     erubi (1.12.0)
     factory_bot (6.4.6)
@@ -336,6 +338,7 @@ DEPENDENCIES
   cssbundling-rails
   database_cleaner-active_record
   debug
+  dockerfile-rails (>= 1.6)
   factory_bot_rails
   http_accept_language (~> 2.1)
   jbuilder
