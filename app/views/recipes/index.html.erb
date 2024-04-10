@@ -1,36 +1,37 @@
-
-<!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <div class="bg-white py-16 sm:py-24 lg:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-      <h2 class="inline sm:block"><%= t('recipes.index.title') %></h2>
+    <div class="max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+      <h2 class="block mb-4"><%= t('recipes.index.title') %></h2>
     </div>
-    <form class="mt-10 max-w-md">
-      <div class="flex gap-x-4">
+    <div class="max-w-2xl text-lg text-gray-900 sm:text-xl">
+      <p><%= t('recipes.index.intro') %></p>
+    </div>
+    <form class="mt-8 sm:mt-10 max-w-md">
+      <div class="flex flex-col gap-y-4">
         <%= form_for @search, url: recipes_path, data: { 'turbo-method': :get }, method: :get, html: { class: 'mt-10 max-w-md' } do |f| %>
-          <%= f.label :query, t('recipes.index.form.query'), class: 'sr-only' %>
-          <%= f.text_field :query, class: 'min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6' %>
-          <%= f.submit t('recipes.index.form.submit'), class: 'flex-none rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600' %>
+          <div class="flex flex-col space-y-2 sm:flex-row sm:space-x-1">
+            <%= f.label :query, t('recipes.index.form.query'), class: 'sr-only' %>
+            <%= f.text_field :query, autofocus: true, placeholder: t('recipes.index.form.placeholder'), class: 'min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6' %>
+            <%= f.submit t('recipes.index.form.submit'), class: 'flex-none rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600' %>
+          </div>
+          <div class="flex space-x-4" id="ingredients">
+            <% @search.ingredients.each do |ingredient| %>
+              <div class="bg-indigo-100 px-2 py-1 rounded text-sm">
+                <%= hidden_field_tag 'search_form[ingredients][]', ingredient %>
+                <%= ingredient %>
+                <%= link_to 'x', remove_ingredient_from_search(@search.ingredients, ingredient) %>
+              </div>
+            <% end %>
+          </div>
         <% end %>
       </div>
     </form>
-    <div class="flex flex-col space-y-4 my-10">
-      <%= render @recipes %>
-    </div>
-    <%= paginate @recipes %>
+    <% if @recipes.any? %>
+      <div class="flex flex-col space-y-4 my-10" id="recipes">
+        <%= render @recipes %>
+      </div>
+      <%= paginate @recipes %>
+    <% end %>
   </div>
 </div>
 

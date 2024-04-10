@@ -36,6 +36,7 @@ group :development, :test do
   gem 'rubocop-rspec'
   gem 'spring'
   gem 'spring-commands-rspec'
+  gem 'launchy'
 end
 
 group :development do

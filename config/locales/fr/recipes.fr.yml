@@ -2,6 +2,8 @@ fr:
   recipes:
     index:
       title: "C'est l'heure du repas!"
+      intro: |
+        Qu'avez vous dans votre frigo? Ajoutez un par un les ingrédients que vous avez et nous vous trouverons une recette!
       form:
-        query: "Rechecher une recette"
-        submit: "Rechercher"
+        placeholder: "Ingrédient"
+        submit: "Ajouter cet ingrédient"

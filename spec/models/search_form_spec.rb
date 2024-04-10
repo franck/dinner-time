@@ -49,5 +49,43 @@ describe SearchForm do
         expect(results).not_to include(recipe2)
       end
     end
+
+    context 'with multiple ingredients' do
+      let!(:recipe1) { Recipe.create!(name: 'Salade de tomates', ingredients: '2 tomates', locale: 'fr') }
+      let!(:recipe2) { Recipe.create!(name: 'Salade de carottes', ingredients: '2 carottes', locale: 'fr') }
+      let!(:recipe3) do
+        Recipe.create!(name: 'Salade de carottes aux épices', ingredients: '2 carottes, des épices', locale: 'fr')
+      end
+
+      it 'returns recipes containing all given the ingredients' do
+        search_form = described_class.new(ingredients: %w[carot epice], locale: 'fr')
+        results = search_form.results
+        expect(results).not_to include(recipe1)
+        expect(results).not_to include(recipe2)
+        expect(results).to include(recipe3)
+      end
+    end
+  end
+
+  describe '#new' do
+    context 'with a query' do
+      let(:search_form) { described_class.new(query: 'carot', locale: 'fr') }
+
+      it 'clears the query' do
+        expect(search_form.query).to be_empty
+      end
+
+      it 'adds the query to the ingredients' do
+        expect(search_form.ingredients).to eq(['carot'])
+      end
+    end
+
+    context 'when query is blank' do
+      let(:search_form) { described_class.new(query: '', locale: 'fr') }
+
+      it 'does not add the query to the ingredients' do
+        expect(search_form.ingredients).to eq([])
+      end
+    end
   end
 end

@@ -2,6 +2,8 @@ en:
   recipes:
     index:
       title: "Dinner Time!"
+      intro: |
+        What do you have in your fridge? Add one by one the ingredients you have and we'll find a recipe for you!
       form:
-        query: "Search for a recipe"
-        submit: "Search"
+        placeholder: "Ingredient"
+        submit: "Add this ingredient"

@@ -12,6 +12,6 @@ class RecipesController < ApplicationController
   private
 
   def search_params
-    params.fetch(:search_form, {}).permit(:query).merge(locale: I18n.locale)
+    params.fetch(:search_form, {}).permit(:query, ingredients: []).merge(locale: I18n.locale)
   end
 end
