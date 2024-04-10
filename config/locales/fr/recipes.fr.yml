@@ -5,5 +5,5 @@ fr:
       intro: |
         Qu'avez vous dans votre frigo? Ajoutez un par un les ingrédients que vous avez et nous vous trouverons une recette!
       form:
-        placeholder: "Ingrédient"
+        placeholder: "Un ingrédient"
         submit: "Ajouter cet ingrédient"

@@ -5,5 +5,5 @@ en:
       intro: |
         What do you have in your fridge? Add one by one the ingredients you have and we'll find a recipe for you!
       form:
-        placeholder: "Ingredient"
+        placeholder: "An ingredient"
         submit: "Add this ingredient"
