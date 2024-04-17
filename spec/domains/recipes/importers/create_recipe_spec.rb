@@ -20,7 +20,7 @@ describe Recipes::Importers::CreateRecipe do
       it 'returns invalid recipe' do
         recipe = described_class.new(invalid_data, locale: 'fr').call
 
-        expect(recipe).to be_invalid
+        expect(recipe).not_to be_valid
       end
 
       it 'does not create a recipe' do

@@ -7,11 +7,11 @@ RSpec.configure do |config|
     cleaner.strategy = :transaction
   end
 
-  config.before(:each, js: true) do
+  config.before(:each, :js) do
     cleaner.strategy = :truncation
   end
 
-  config.before(:each, use_truncation: true) do
+  config.before(:each, :use_truncation) do
     cleaner.strategy = :truncation
   end
 

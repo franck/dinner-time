@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Recipes', type: :request do
+describe 'Recipes' do
   before do
     Recipe.create!(name: 'Salade de tomates', ingredients: '2 tomates', locale: 'fr')
     Recipe.create!(name: 'Salade de carottes', ingredients: '2 carottes', locale: 'fr')
@@ -22,11 +22,11 @@ describe 'Recipes', type: :request do
       end
 
       it 'displays recipes' do
-        recipes = JSON.parse(response.body)
+        recipes = response.parsed_body
 
         expect(recipes.size).to eq(2)
 
-        recipe_names = recipes.map { |recipe| recipe['name'] }
+        recipe_names = recipes.pluck('name')
         expect(recipe_names).to include('Salade de carottes')
         expect(recipe_names).to include('Salade de carottes aux épices')
       end
@@ -47,10 +47,10 @@ describe 'Recipes', type: :request do
       end
 
       it 'displays recipes' do
-        recipes = JSON.parse(response.body)
+        recipes = response.parsed_body
         expect(recipes.size).to eq(1)
 
-        recipe_names = recipes.map { |recipe| recipe['name'] }
+        recipe_names = recipes.pluck('name')
         expect(recipe_names).not_to include('Salade de carottes')
         expect(recipe_names).to include('Salade de carottes aux épices')
       end

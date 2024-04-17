@@ -11,7 +11,7 @@ class SearchForm
     self.ingredients = attributes.fetch(:ingredients, [])
     self.query = attributes.fetch(:query, '')
 
-    return unless query.present?
+    return if query.blank?
 
     ingredients.push(query.dup)
 

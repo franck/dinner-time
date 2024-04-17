@@ -19,7 +19,7 @@ describe 'Search recipes' do
     before do
       visit '/'
       fill_in :search_form_query, with: 'carot'
-      click_button 'Ajouter cet ingrédient'
+      click_on 'Ajouter cet ingrédient'
     end
 
     it 'shows recipes containing this ingredient' do
@@ -43,7 +43,7 @@ describe 'Search recipes' do
     describe 'when I submit the search form with the name of another ingredient' do
       before do
         fill_in :search_form_query, with: 'épices'
-        click_button 'Ajouter cet ingrédient'
+        click_on 'Ajouter cet ingrédient'
       end
 
       it 'shows all ingredients in list' do
