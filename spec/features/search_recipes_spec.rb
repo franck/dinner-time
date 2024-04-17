@@ -79,7 +79,6 @@ describe 'Search recipes' do
           expect(page).to have_no_content('Salade de tomates')
         end
       end
-      end
-
     end
   end
+end

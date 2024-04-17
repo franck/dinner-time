@@ -29,6 +29,7 @@ group :development, :test do
   gem 'database_cleaner-active_record'
   gem 'debug', platforms: %i[mri windows]
   gem 'factory_bot_rails'
+  gem 'launchy'
   gem 'rspec-rails'
   gem 'rubocop-capybara'
   gem 'rubocop-performance'
@@ -36,7 +37,6 @@ group :development, :test do
   gem 'rubocop-rspec'
   gem 'spring'
   gem 'spring-commands-rspec'
-  gem 'launchy'
 end
 
 group :development do
@@ -46,4 +46,4 @@ end
 
 gem 'http_accept_language', '~> 2.1'
 
-gem "dockerfile-rails", ">= 1.6", :group => :development
+gem 'dockerfile-rails', '>= 1.6', group: :development
